@@ -48,8 +48,8 @@ function computePowerConsumption (report) {
     return parseInt(gamma, 2) * parseInt(epsilon, 2)
 }
 
-console.log('1-1-test:', computePowerConsumption(test))
-console.log('1-1:', computePowerConsumption(input))
+console.log('3-1-test:', computePowerConsumption(test))
+console.log('3-1:', computePowerConsumption(input))
 
 function computeRating (report, bitCriterium) {
     let i = 0
@@ -68,5 +68,5 @@ function computeLifeSupportRating (report) {
     return parseInt(oxygenGenerator, 2) * parseInt(co2Scrubber, 2)
 }
 
-console.log('1-2-test:', computeLifeSupportRating(test))
-console.log('1-2:', computeLifeSupportRating(input))
+console.log('3-2-test:', computeLifeSupportRating(test))
+console.log('3-2:', computeLifeSupportRating(input))

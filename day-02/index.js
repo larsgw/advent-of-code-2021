@@ -24,8 +24,8 @@ function calculatePosition (instructions) {
   return horizontal * depth
 }
 
-console.log('1-1-test:', calculatePosition(test))
-console.log('1-1:', calculatePosition(input))
+console.log('2-1-test:', calculatePosition(test))
+console.log('2-1:', calculatePosition(input))
 
 function updatePosition2 ([horizontal, depth, aim], instruction) {
   const [direction, units] = instruction.split(' ')
@@ -43,5 +43,5 @@ function calculatePosition2 (instructions) {
   return horizontal * depth
 }
 
-console.log('1-2-test:', calculatePosition2(test))
-console.log('1-2:', calculatePosition2(input))
+console.log('2-2-test:', calculatePosition2(test))
+console.log('2-2:', calculatePosition2(input))
