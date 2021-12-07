@@ -15,5 +15,9 @@ module.exports.readNumbers = function (lines) {
   if (!Array.isArray(lines)) {
     lines = module.exports.readLines(lines)
   }
-  return lines.map(number => parseInt(number))
+  return module.exports.readNumberArray(lines)
+}
+
+module.exports.readNumberArray = function (array) {
+  return array.map(number => parseInt(number))
 }
