@@ -18,6 +18,13 @@ module.exports.readNumbers = function (lines) {
   return module.exports.readNumberArray(lines)
 }
 
+module.exports.readNumberLine = function (line) {
+  if (!Array.isArray(line)) {
+    line = module.exports.readLines(line)
+  }
+  return module.exports.readNumberArray(line[0].split(','))
+}
+
 module.exports.readNumberArray = function (array) {
   return array.map(number => parseInt(number))
 }
